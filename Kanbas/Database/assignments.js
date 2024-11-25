@@ -1,0 +1,30 @@
+export default [
+  {
+    _id: "A101",
+    title: "Propulsion Assignment",
+    course: "RS101",
+    points: 100,
+    due: "2013-12-01T00:00:00Z",
+    available: "2013-11-15T00:00:00Z",
+  },
+  {
+    _id: "A102",
+    title: "Combustion Analysis",
+    course: "RS101",
+    points: 150,
+    due: "2013-12-15T00:00:00Z",
+    available: "2013-11-15T00:00:00Z",
+  },
+  {
+    _id: "A103",
+    title: "Nozzle Design Project",
+    course: "RS101",
+    points: 100,
+  },
+  { _id: "A201", title: "Aerodynamics Quiz", course: "RS102" },
+  { _id: "A202", title: "Flow Analysis", course: "RS102" },
+  { _id: "A203", title: "Heating Analysis", course: "RS102" },
+  { _id: "A301", title: "Structural Design Task", course: "RS103" },
+  { _id: "A302", title: "Orbital Calculations", course: "RS103" },
+  { _id: "A303", title: "Systems Engineering Exam", course: "RS103" },
+];
