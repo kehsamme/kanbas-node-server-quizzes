@@ -4,9 +4,12 @@ import express from "express";
 import Hello from "./Hello.js";
 import Lab5 from "./Lab5/index.js";
 import UserRoutes from "./Kanbas/Users/routes.js";
+import courses from "./Kanbas/Database/courses.js";
 import cors from "cors";
 import mongoose from "mongoose";
 import "dotenv/config";
+import CourseRoutes from "./Kanbas/Courses/routes.js";
+import ModuleRoutes from "./Kanbas/Modules/routes.js";
 
 const CONNECTION_STRING =
   process.env.MONGO_CONNECTION_STRING ||
@@ -39,5 +42,7 @@ app.use(express.json());
 Hello(app);
 Lab5(app);
 UserRoutes(app);
+CourseRoutes(app);
+ModuleRoutes(app);
 
 app.listen(process.env.PORT || 4000);
