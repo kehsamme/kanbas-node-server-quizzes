@@ -33,11 +33,16 @@ export default function QuizRoutes(app) {
     const status = await dao.deleteQuiz(quizId);
     res.json(status);
   };
+  const getAllQuiz = async (req, res) => {
+    const status = await dao.findAllQuiz();
+    res.json(status);
+  };
 
   app.get("/api/courses/:courseId/quizzes/:quizId", findQuizById);
   app.get("/api/courses/:courseId/quizzes", findQuizzesForCourse);
   app.post("/api/courses/:courseId/quizzes", createQuiz);
   app.put("/api/quizzes/:quizId/editor", updateQuiz);
   app.delete("/api/quizzes/:quizId", deleteQuiz);
+  app.get("/api/quizzes", getAllQuiz);
 
 }
